@@ -1,0 +1,128 @@
+<div>
+  <div class="container">
+      <div class="counter">
+        <div class="show-data">
+          <p>{{totalValue}}</p>
+        </div>
+      </div>
+
+      <div class="line-row center-pos width-size">
+        <div (click)="handleOperator('+')" class="btn-operator pos-text">
+          +
+        </div>
+        <div (click)="handleOperator('-')" class="btn-operator pos-text">
+          -
+        </div>
+        <div (click)="handleOperator('/')" class="btn-operator pos-text">
+          /
+        </div>
+        <div (click)="handleOperator('*')" class="btn-operator pos-text">
+          *
+        </div>
+        <div (click)="handleProcess()" class="btn-operator pos-text">
+          =
+        </div>
+      </div>
+
+      <div class="line-row center-pos width-size">
+        <div (click)="handleOperand(0)" class="btn-operator pos-text">
+          0
+        </div>
+        <div (click)="handleOperand(1)" class="btn-operator pos-text">
+          1
+        </div>
+        <div (click)="handleOperand(2)" class="btn-operator pos-text">
+          2
+        </div>
+        <div (click)="handleOperand(3)" class="btn-operator pos-text">
+          3
+        </div>
+        <div (click)="handleOperand(4)" class="btn-operator pos-text">
+          4
+        </div>
+      </div>
+
+      <div class="line-row center-pos width-size">
+        <div (click)="handleOperand(5)" class="btn-operator pos-text">
+          5
+        </div>
+        <div (click)="handleOperand(6)" class="btn-operator pos-text">
+          6
+        </div>
+        <div (click)="handleOperand(7)" class="btn-operator pos-text">
+          7
+        </div>
+        <div (click)="handleOperand(8)" class="btn-operator pos-text">
+          8
+        </div>
+        <div (click)="handleOperand(9)" class="btn-operator pos-text">
+          9
+        </div>
+      </div>
+  </div>
+</div>
+
+<style>
+.container {
+  width: 500px;
+  height: 400px;
+  border-radius: 30px;
+  background-color: rgb(4, 116, 78);
+  margin: auto;
+}
+
+.width-size {
+  width: 436px;
+}
+
+.center-pos {
+  margin: auto;
+}
+
+.line-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  width: 316px;
+  margin: auto;
+}
+
+.pos-text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.show-data {
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: wheat;
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.btn-operator {
+  width: 85px;
+  height: 54px;
+  background-color: wheat;
+  border-radius: 10px;
+  margin-top: 28px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.btn-counter {
+  width: 90px;
+  height: 30px;
+  background-color: cornsilk;
+  border-radius: 30px;
+}
+</style>
